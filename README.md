@@ -1,2 +1,2 @@
 # Phonegap-Camera-Test
-A simple test of Phonegaps's Camera API
+A simple test of Phonegaps's Camera API.
