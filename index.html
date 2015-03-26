@@ -22,7 +22,6 @@
 	//
 	function onDeviceReady() {
 		//alert("device ready");
-		$('#launchCamera').click(function() { alert('got camera'); getCamera(); });
 	}
 	//
 	function onLoad() {
@@ -35,7 +34,7 @@
 
 <span onclick='navigator.app.exitApp()'><button class="button button-pill button-primary button-large" style="margin:0.1em;float:right;">Exit</button></span>
 
-<div id=launchCamera class="button button-pill button-action button-large" style="margin:1em;">Launch Camera API</div>
+<div id=launchCamera onclick="getCamera()" class="button button-pill button-action button-large" style="margin:1em;">Launch Camera API</div>
 <div id=myImage>
 </div>
 
