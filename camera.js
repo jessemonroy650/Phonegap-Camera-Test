@@ -3,23 +3,21 @@
 //	https://github.com/apache/cordova-plugin-camera/
 //
 var cameraOptions = {
-	quality: 50,
-	destinationType: Camera.DestinationType.FILE_URI,
-	sourceType: PHOTOLIBRARY, // This is required with, mediaType: VIDEO 
-	mediaType: VIDEO
- };
+    quality: 50,
+    destinationType: Camera.DestinationType.FILE_URI
+};
 
 function getCamera() {
-	navigator.camera.getPicture(onSuccessCamera, onFailCamera, cameraOptions);
+    navigator.camera.getPicture(onSuccessCamera, onFailCamera, cameraOptions);
 }
 
 function onSuccessCamera(imageURI) {
     var image = document.getElementById('myImage');
-	// place image in view
+    // place image in view
     image.src = imageURI;
-	// reuse object
-	image = document.getElementById('imgName');
-	// write the text next to the image
+    // reuse object
+    image = document.getElementById('imgName');
+    // write the text next to the image
     image.innerHTML = imageURI;
 }
 
