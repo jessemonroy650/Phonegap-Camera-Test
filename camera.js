@@ -1,6 +1,6 @@
 //
-//	2015-05-23 - Added Video
-//	https://github.com/apache/cordova-plugin-camera/
+//    2015-05-23 - Added Video
+//    https://github.com/apache/cordova-plugin-camera/
 //
 var cameraOptions = {
     quality: 50,
