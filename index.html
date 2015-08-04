@@ -18,8 +18,6 @@
     <script type="text/javascript">
     // Wait for PhoneGap to load
     document.addEventListener("deviceready", onDeviceReady, false);
-    // Get rid of 300ms delay 
-    document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
     //
     function onDeviceReady() {
         //alert("device ready");
@@ -31,6 +29,9 @@
             /* deals with post-iOS-7 change that covers the status bar */
             /* http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/ */
             document.body.style.marginTop = "20px";
+        } else if (device.platform == 'Android') {
+            // Get rid of 300ms delay 
+            document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
         }
     }
     //
